@@ -19,6 +19,8 @@ A simple library for use the driver motors L298n
 #define IN4 11
 
 L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
+
+(...)
 ```
 
 ### TIPs and Warnings
@@ -26,8 +28,6 @@ L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
 (...)
 
 ## Library Reference
-
-(...)
 
 ### You should know:
 - `L298N L298N::setMaxSpeedA(int max_speed_a)` - Sets the maximum speed of Motor A (0 - 255);
@@ -56,6 +56,8 @@ L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
 - `L298N L298N::setBrake(int brake)` - Sets the same standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
 
 ### You don't need to know:
+- Nothing.
+
 
 ### Hardware Information
 - The ENA and ENB pins must be connected to PWM outputs!
