@@ -3,10 +3,10 @@ A simple library for use the driver motors L298n
 
 ## Installation
 
-1. [Download](https://github.com/MarceloFariaz/Arduino-L298N-Library/archive/master.zip) the Latest release from GitHub.
-2. Unzip and modify the Folder name to "L298N" (Remove the '-version')
-3. Paste the modified folder on your Library folder (On your `Libraries` folder inside Sketchbooks or Arduino software).
-4. Re-open Arduino Software
+1. [Download](https://github.com/MarceloFariaz/Arduino-L298N-Library/archive/master.zip) the Latest release from GitHub;
+2. Unzip and modify the Folder name to "L298N";
+3. Paste the modified folder on your Library folder (On your `Libraries` folder inside Sketchbooks or Arduino software);
+4. Re-open Arduino Software.
 
 ## Getting Started
 
