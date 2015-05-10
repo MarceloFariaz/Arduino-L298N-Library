@@ -1,0 +1,40 @@
+#######################################
+# Syntax Coloring Map For L298N
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+L298N	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setMaxSpeedA	KEYWORD2
+setMaxSpeedB	KEYWORD2
+setMaxSpeed	KEYWORD2
+setMinSpeedA	KEYWORD2
+setMinSpeedB	KEYWORD2
+setMinSpeed	KEYWORD2
+speedA	KEYWORD2
+speedB	KEYWORD2
+setSpeedA	KEYWORD2
+setSpeedB	KEYWORD2
+setSpeed	KEYWORD2
+fastBrakeA	KEYWORD2
+fastBrakeB	KEYWORD2
+fastBrake	KEYWORD2
+freeBrakeA	KEYWORD2
+freeBrakeB	KEYWORD2
+freeBrake	KEYWORD2
+setBrakeA	KEYWORD2
+setBrakeB	KEYWORD2
+setBrake	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FREE_BRAKE	LITERAL1
+FAST_BRAKE	LITERAL1
