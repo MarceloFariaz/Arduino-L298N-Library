@@ -23,7 +23,11 @@ L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
 
 ### TIPs and Warnings
 
+(...)
+
 ## Library Reference
+
+(...)
 
 ### You should know:
 - `L298N L298N::setMaxSpeedA(int max_speed_a)` - Sets the maximum speed of Motor A (0 - 255);
@@ -46,10 +50,10 @@ L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
 - `L298N L298N::freeBrakeA()` - brake Motor A, a "Free brake";
 - `L298N L298N::freeBrakeB()` - brake Motor B, a "Free brake";
 - `L298N L298N::freeBrake()` - brake Motors, a "Free brake";
-- `L298N L298N::setBrakeA(int brake_a)` - Sets the standard brake of the Motor B (FAST_BRAKE or FREE_BRAKE);
-- `L298N L298N::setBrakeB(int brake_b)` - Sets the standard brake of the Motor A (FAST_BRAKE or FREE_BRAKE);
-- `L298N L298N::setBrake(int brake_a, int brake_b)` - Sets the standard brake of the two Motors (FAST_BRAKE or FREE_BRAKE);
-- `L298N L298N::setBrake(int brake)` - Sets the same standard brake of the two Motors (FAST_BRAKE or FREE_BRAKE);
+- `L298N L298N::setBrakeA(int brake_a)` - Sets the standard brake of the Motor B (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298N L298N::setBrakeB(int brake_b)` - Sets the standard brake of the Motor A (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298N L298N::setBrake(int brake_a, int brake_b)` - Sets the standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298N L298N::setBrake(int brake)` - Sets the same standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
 
 ### You don't need to know:
 
