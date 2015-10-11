@@ -33,10 +33,10 @@ To set the `minimum PWM value` for the motors:
 myMotors.setMinSpeedB(50).setMinSpeedB(50);
 ```
 
-To set the `standard brake` for the motors to `FASTBRAKE`:
+To set the `standard brake` for the motor A to `FASTBRAKE` and for motor B `FREEBRAKE`:
 
 ```c++
-myMotors.setBrakeA(FASTBRAKE).setBrakeB(FASTBRAKE);
+myMotors.setBrakeA(FASTBRAKE).setBrakeB(FREEBRAKE);
 ```
 
 To set the `speed value` for the motors to `100% FORWARD`:
