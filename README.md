@@ -57,6 +57,10 @@ To `brake the motors`:
 myMotors.setSpeedA(0).setSpeedB(0);
 //or
 myMotors.brake();
+//or
+myMotors.fastBrake();
+//or
+myMotors.freeBrake();
 ```
 
 ### TIPs and Warnings
