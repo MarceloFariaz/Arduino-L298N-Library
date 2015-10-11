@@ -24,72 +24,72 @@ L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
 To set the `maximum PWM value` for the motors:
 
 ```c++
-  myMotors.setMaxSpeedA(200).setMaxSpeedB(200);
+myMotors.setMaxSpeedA(200).setMaxSpeedB(200);
 ```
 
 To set the `minimum PWM value` for the motors:
 
 ```c++
-  myMotors.setMinSpeedB(50).setMinSpeedB(50);
+myMotors.setMinSpeedB(50).setMinSpeedB(50);
 ```
 
 To set the `standard brake` for the motors to `FASTBRAKE`:
 
 ```c++
-  myMotors.setBrakeA(FASTBRAKE).setBrakeB(FASTBRAKE);
+myMotors.setBrakeA(FASTBRAKE).setBrakeB(FASTBRAKE);
 ```
 
 To set the `speed value` for the motors to `100% FORWARD`:
 
 ```c++
-  myMotors.setSpeedA(100).setSpeedB(100);
+myMotors.setSpeedA(100).setSpeedB(100);
 ```
 
 To set the `speed value` for the motors to `100% BACKWARD`:
 
 ```c++
-  myMotors.setSpeedA(-100).setSpeedB(-100);
+myMotors.setSpeedA(-100).setSpeedB(-100);
 ```
 
 To `brake the motors`:
 
 ```c++
-  myMotors.setSpeedA(0).setSpeedB(0);
-  //or
-  myMotors.brake();
+myMotors.setSpeedA(0).setSpeedB(0);
+//or
+myMotors.brake();
 ```
 
 ### TIPs and Warnings
 
 ```c++
-  myMotors.setSpeedA(100).setSpeedB(100);
+myMotors.setSpeedA(100).setSpeedB(100);
 ```
 
 It's the same as:
 
 ```c++
-  myMotors.setSpeedA(100);
-  myMotors.setSpeedB(100);
+myMotors.setSpeedA(100);
+myMotors.setSpeedB(100);
 ```
 
 And as:
 
 ```c++
-  myMotors.setSpeed(100, 100);
+myMotors.setSpeed(100, 100);
 ```
 
 And as:
 
 ```c++
-  myMotors.setSpeed(100);
+myMotors.setSpeed(100);
 ```
 
 The same goes for the instructions:
 
 ```c++
-  setMaxSpeedA(int max_speed);
-  setMinSpeed(int min_speed);
-  setBrake(int brake);
+setMaxSpeedA(int max_speed);
+setMinSpeed(int min_speed);
+setBrake(int brake);
 ```
 
 `Braking the motors`
