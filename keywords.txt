@@ -31,7 +31,9 @@ freeBrakeB	KEYWORD2
 freeBrake	KEYWORD2
 setBrakeA	KEYWORD2
 setBrakeB	KEYWORD2
-setBrake	KEYWORD2
+brake	KEYWORD2
+brakeA	KEYWORD2
+brakeB	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
