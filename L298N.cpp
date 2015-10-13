@@ -9,6 +9,13 @@
 
 L298N::L298N(int ENA, int IN1, int IN2, int ENB, int IN3, int IN4)
 {
+	_max_speed_a = 255;
+	_max_speed_b = 255;
+	_min_speed_a = 0;
+	_min_speed_b = 0;
+	_brake_a = FAST_BRAKE;
+	_brake_b = FAST_BRAKE;
+
 	_ENA = ENA;
 	_IN1 = IN1;
 	_IN2 = IN2;
@@ -120,10 +127,7 @@ L298N L298N::setSpeedA(int speed_a)
 	}
 	else 
 	{
-		if (_brake_a == FAST_BRAKE)
-			fastBrakeA();
-		if (_brake_a == FREE_BRAKE)
-			freeBrakeA();
+		brakeA();
 	}
 	
 	analogWrite(_ENA, map(speed_a, 0, 100, _min_speed_a, _max_speed_a));
@@ -151,10 +155,7 @@ L298N L298N::setSpeedB(int speed_b)
 	}
 	else 
 	{
-		if (_brake_b == FAST_BRAKE)
-			fastBrakeB();
-		if (_brake_b == FREE_BRAKE)
-			freeBrakeB();
+		brakeB();
 	}
 	
 	analogWrite(_ENB, map(speed_b, 0, 100, _min_speed_b, _max_speed_b));
@@ -223,6 +224,30 @@ L298N L298N::freeBrake()
 	freeBrakeA();
 	freeBrakeB();
 	
+	return *this;
+}
+
+
+L298N L298N::brakeA(){
+	if (_brake_a == FAST_BRAKE)
+		fastBrakeA();
+	if (_brake_a == FREE_BRAKE)
+		freeBrakeA();
+	return *this;
+}
+
+L298N L298N::brakeB(){
+	if (_brake_b == FAST_BRAKE)
+		fastBrakeB();
+	if (_brake_b == FREE_BRAKE)
+		freeBrakeB();
+	return *this;
+}
+
+L298N L298N::brake(){
+	brakeA();
+	brakeB();
+
 	return *this;
 }
 
