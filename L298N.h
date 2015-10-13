@@ -16,8 +16,8 @@
 class L298N{
 	private:
 		int _ENA, _IN1, _IN2, _ENB, _IN3, _IN4, _speed_a, _speed_b,
-			_max_speed_a = 255, _max_speed_b = 255, _min_speed_a = 0, _min_speed_b = 0;
-		bool _brake_a = FAST_BRAKE, _brake_b = FAST_BRAKE;
+			_max_speed_a, _max_speed_b, _min_speed_a, _min_speed_b;
+		bool _brake_a, _brake_b;
 		
 	public:
 		L298N (int ENA = 6, int IN1 = 7, int IN2 = 8, int ENB = 9, int IN3 = 10, int IN4 = 11);
@@ -41,6 +41,9 @@ class L298N{
 		L298N freeBrakeA();
 		L298N freeBrakeB();
 		L298N freeBrake();
+		L298N brakeA();
+		L298N brakeB();
+		L298N brake();
 		L298N setBrakeA(int brake_a);
 		L298N setBrakeB(int brake_b);
 		L298N setBrake(int brake_a, int brake_b);
