@@ -1,12 +1,11 @@
-# Arduino L298N Library
-A simple library for use the driver motors L298n
+# Arduino L298x Library
+A simple library for use the driver motors L298x
 
 ## Installation
 
-1. [Download](https://github.com/MarceloFariaz/Arduino-L298N-Library/archive/master.zip) the Latest release from GitHub;
-2. Unzip and modify the Folder name to "L298N";
-3. Paste the modified folder on your Library folder (On your `Libraries` folder inside Sketchbooks or Arduino software);
-4. Re-open Arduino Software.
+1. [Download](https://github.com/MarceloFariaz/Arduino-L298x-Library/archive/master.zip) the Latest release from GitHub;
+2. In Arduino IDE, go to Menu `Sketch->Include Library->Add .ZIP Library`;
+3. Select the file downloaded and click on Open.
 
 ## Getting Started
 
@@ -18,7 +17,7 @@ A simple library for use the driver motors L298n
 #define IN3 10
 #define IN4 11
 
-L298N myMotors = L298N(ENA, IN1, IN2, ENB, IN3, IN4);
+L298x myMotors = L298x(ENA, IN1, IN2, ENB, IN3, IN4);
 ```
 
 To set the `maximum PWM value` for the motors:
@@ -102,30 +101,30 @@ setBrake(int brake);
 ## Library Reference
 
 ### You should know:
-- `L298N L298N::setMaxSpeedA(int max_speed_a)` - Sets the maximum speed of Motor A (0 - 255);
-- `L298N L298N::setMaxSpeedB(int max_speed_b)` - Sets the maximum speed of Motor B (0 - 255);
-- `L298N L298N::setMaxSpeed(int max_speed_a, int max_speed_b)` - Sets the maximum speed of the two Motors (0 - 255);
-- `L298N L298N::setMaxSpeed(int max_speed)` - Sets the same maximum speed of the two Motors (0 - 255);
-- `L298N L298N::setMinSpeedA(int min_speed_a)` - Sets the minimum speed of Motor A (0 - 255);
-- `L298N L298N::setMinSpeedB(int min_speed_b)` - Sets the minimum speed of Motor B (0 - 255);
-- `L298N L298N::setMinSpeed(int min_speed_a, int min_speed_b)` - Sets the minimum speed of the two Motors (0 - 255);
-- `L298N L298N::setMinSpeed(int min_speed)` - Sets the same minimum speed of the two Motors (0 - 255);
-- `int L298N::speedA()` - Returns the current speed of Motor A (0 - 100);
-- `int L298N::speedB()` - Returns the current speed of Motor B (0 - 100);
-- `L298N L298N::setSpeedA(int speed_a)` - Sets the speed of Motor A (0 - 100);
-- `L298N L298N::setSpeedB(int speed_b)` - Sets the speed of Motor B (0 - 100);
-- `L298N L298N::setSpeed(int speed_a, int speed_b)` -  Sets the speed of the two Motors (0 - 100);
-- `L298N L298N::setSpeed(int speed)` - Sets the same speed of the two Motors (0 - 100);
-- `L298N L298N::fastBrakeA()` - brake Motor A, a "Fast brake";
-- `L298N L298N::fastBrakeB()` - brake Motor B, a "Fast brake";
-- `L298N L298N::fastBrake()` - brake Motors, a "Fast brake";
-- `L298N L298N::freeBrakeA()` - brake Motor A, a "Free brake";
-- `L298N L298N::freeBrakeB()` - brake Motor B, a "Free brake";
-- `L298N L298N::freeBrake()` - brake Motors, a "Free brake";
-- `L298N L298N::setBrakeA(int brake_a)` - Sets the standard brake of the Motor B (`FAST_BRAKE` or `FREE_BRAKE`);
-- `L298N L298N::setBrakeB(int brake_b)` - Sets the standard brake of the Motor A (`FAST_BRAKE` or `FREE_BRAKE`);
-- `L298N L298N::setBrake(int brake_a, int brake_b)` - Sets the standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
-- `L298N L298N::setBrake(int brake)` - Sets the same standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298x::setMaxSpeedA(int max_speed_a)` - Sets the maximum speed of Motor A (0 - 255);
+- `L298x L298x::setMaxSpeedB(int max_speed_b)` - Sets the maximum speed of Motor B (0 - 255);
+- `L298x L298x::setMaxSpeed(int max_speed_a, int max_speed_b)` - Sets the maximum speed of the two Motors (0 - 255);
+- `L298x L298x::setMaxSpeed(int max_speed)` - Sets the same maximum speed of the two Motors (0 - 255);
+- `L298x L298x::setMinSpeedA(int min_speed_a)` - Sets the minimum speed of Motor A (0 - 255);
+- `L298x L298x::setMinSpeedB(int min_speed_b)` - Sets the minimum speed of Motor B (0 - 255);
+- `L298x L298x::setMinSpeed(int min_speed_a, int min_speed_b)` - Sets the minimum speed of the two Motors (0 - 255);
+- `L298x L298x::setMinSpeed(int min_speed)` - Sets the same minimum speed of the two Motors (0 - 255);
+- `int L298x::speedA()` - Returns the current speed of Motor A (0 - 100);
+- `int L298x::speedB()` - Returns the current speed of Motor B (0 - 100);
+- `L298x L298x::setSpeedA(int speed_a)` - Sets the speed of Motor A (0 - 100);
+- `L298x L298x::setSpeedB(int speed_b)` - Sets the speed of Motor B (0 - 100);
+- `L298x L298x::setSpeed(int speed_a, int speed_b)` -  Sets the speed of the two Motors (0 - 100);
+- `L298x L298x::setSpeed(int speed)` - Sets the same speed of the two Motors (0 - 100);
+- `L298x L298x::fastBrakeA()` - brake Motor A, a "Fast brake";
+- `L298x L298x::fastBrakeB()` - brake Motor B, a "Fast brake";
+- `L298x L298x::fastBrake()` - brake Motors, a "Fast brake";
+- `L298x L298x::freeBrakeA()` - brake Motor A, a "Free brake";
+- `L298x L298x::freeBrakeB()` - brake Motor B, a "Free brake";
+- `L298x L298x::freeBrake()` - brake Motors, a "Free brake";
+- `L298x L298x::setBrakeA(int brake_a)` - Sets the standard brake of the Motor B (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298x L298x::setBrakeB(int brake_b)` - Sets the standard brake of the Motor A (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298x L298x::setBrake(int brake_a, int brake_b)` - Sets the standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
+- `L298x L298x::setBrake(int brake)` - Sets the same standard brake of the two Motors (`FAST_BRAKE` or `FREE_BRAKE`);
 
 ### You don't need to know:
 - Nothing.
